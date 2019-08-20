@@ -1,0 +1,21 @@
+server:
+  port: ${port:5000}
+  context-path: /notification-service
+
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        healthCheckPath: /notification-service/health
+        healthCheckInterval: 10s
+      config:
+        enabled: true
+        prefix: config
+        defaultContext: app
+        fail-fast: true
+        profile-separator: '::'
+        watch:
+          enabled: false

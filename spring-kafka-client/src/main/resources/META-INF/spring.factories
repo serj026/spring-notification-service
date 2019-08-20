@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.serj026.services.notification.client.springkafka.NotificationClientConfiguration
