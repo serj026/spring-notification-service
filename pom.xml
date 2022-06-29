@@ -30,7 +30,7 @@
         <!-- Kafka -->
         <camel.version>2.16.2</camel.version>
         <kafka_2.10.version>0.8.2.1</kafka_2.10.version>
-        <zookeeper.version>3.4.6</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
 
         <serj026-rest.version>1.4</serj026-rest.version>
         <session.version>1.1</session.version>
